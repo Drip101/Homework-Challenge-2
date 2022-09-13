@@ -19,8 +19,22 @@
     margin-bottom: 50px;
 }
 
-#navbar {
+#navBar {
     display: flex;
     justify-content: right;
 
+}
+
+#test {
+
+    display: flex;
+
+}
+
+#hey {
+    background-image: url('image1-29-Edit.JPEG');
+    background-size:cover;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
 }
