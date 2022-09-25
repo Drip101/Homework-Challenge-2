@@ -6,7 +6,6 @@
     background-size: cover;
     position: relative;
 
-
 }
 
 .hero-text {
@@ -37,4 +36,8 @@
     width: 300px;
     height: 300px;
     margin: 10px;
+}
+
+#MyBio {
+    display: 
 }
