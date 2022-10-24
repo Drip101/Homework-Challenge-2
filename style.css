@@ -1,0 +1,75 @@
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;   
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header {
+    padding: 20px;
+}
+nav{
+    display: none;
+}
+.menu{
+    width: 65px;
+    height: 65px;
+    border-radius:50%;
+    background-color: #808080;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menu span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin-bottom: 1px;
+    background-color: white;
+    border-radius: 3px;
+}
+.hero-image {
+    background-image: url("image1-29-Edit.JPEG");
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    margin-bottom: 50px;
+}
+
+#navBar {
+    display: flex;
+    justify-content: right;
+
+}
+
+#test {
+
+    display: flex;
+
+}
+
+#hey {
+    background-image: url('image1-29-Edit.JPEG');
+    background-size:cover;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+
+#MyBio {
+    display: 
+}
