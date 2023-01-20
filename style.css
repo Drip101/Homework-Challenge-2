@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -5,22 +7,65 @@
 }
 
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 header {
-    padding: 20px;
+    background-color: #808080;
+    border-radius: 50px 50px;
+    width: 55px;
 }
 
 nav {
-    display: none !important;
+    display: block !important;
 }
-
+nav a{
+    position: relative;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav img{
+    width: 25px;
+    height: 25px;
+}
+nav button{
+    position: absolute;
+    left: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: inherit;
+    border: none;
+    display: block;
+    min-width: fit-content;
+}
+nav span::before {
+content: "";
+position: absolute;
+right: 0%;
+top: 50%;
+height: 90%;
+transform: translateY(-50%);
+display: block;
+background-color: transparent;
+width: 2px;
+border-radius: 10px;
+}
+a.active span::before, nav a:hover span::before {
+background-color: #ffd700;
+}
+a.active,a:hover {
+    color: #ffd700;
+}
+a.active img,a:hover img{
+    filter: invert(72%) sepia(85%) saturate(723%) hue-rotate(0deg) brightness(104%) contrast(103%);
+}
 .menu {
     width: 55px;
     height: 55px;
-    border-radius: 50%;
-    background-color: #808080;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -247,6 +292,18 @@ left: 0%;
 .css span {
     left: 65%
 }
+.javascript span{
+    left: 60%;
+}
+.mysql span{
+left: 70%;
+}
+.nodejs span{
+    left: 65%;
+}
+.react span{
+    left: 70%;
+}
 .skills li::before{
     content: "";
     bottom: 0;
@@ -259,7 +316,19 @@ left: 0%;
 
 }
 .css::before {
-    width:70%
+    width:70%;
+}
+.javascript::before{
+    width: 65%;
+}
+.mysql::before{
+    width: 75%;
+}
+.nodejs::before{
+    width: 70%;
+}
+.react::before{
+    width: 80%;
 }
 .p-grid {
     padding: 40px 20px;
@@ -363,4 +432,7 @@ textarea{
     height: 15px;
     display: block;
     filter: invert(100%) sepia(0%) saturate(421%) hue-rotate(236deg) brightness(108%) contrast(101%);
+}
+.gold{
+    color: #ffd700;
 }
