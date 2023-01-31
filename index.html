@@ -212,14 +212,16 @@
         const m = document.querySelector('header')
         const n = document.querySelectorAll('nav a')
         const c = e => {
-            console.log(e.target)
-            let p = e.target
-            if (e.target.nodeName === "")
-                if (e.target && e.target.nodeName !== "DIV") {
-                    n.forEach(o => o.classList.remove('active'))
-                    e.target.classList.add('active')
-                }
-            
+            console.log(e)
+            let p = e
+
+            if (e && e.nodeName !== "DIV") {
+                if (e.nodeName !== "A") p = e.closest("a")
+                n.forEach(o => o.classList.remove('active'))
+                p.classList.add('active')
+                console.log(p)
+            }
+
 
             m.classList.toggle('active')
         }

@@ -5,7 +5,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -395,6 +397,7 @@ row-gap: 25px;
 top:0%;
 left:0%;
 width: 100%;
+object-fit: cover;
 }
 .work a {
     position: absolute;
